@@ -6,11 +6,28 @@
   <title>Happy Propose Day</title>
   <link rel="stylesheet" href="styles.css">
   <style>
-    .container {
+    body {
+      background: linear-gradient(117deg, #ff41f7 0%, rgba(255, 73, 73, 0.81) 100%);
+      font-family: Arial, sans-serif;
+      color: white;
       text-align: center;
-      margin-top: 50px;
     }
     
+    .container {
+      margin-top: 50px;
+    }
+
+    .heart-background {
+      background-color: rgba(255, 255, 255, 0.4);
+      padding: 20px;
+      border-radius: 15px;
+    }
+
+    h1, h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+
     .floating-hearts {
       font-size: 40px;
       animation: float 2s ease-in-out infinite;
@@ -26,7 +43,7 @@
       100% { transform: translateY(0); }
     }
 
-    #surpriseMessage {
+    #surpriseMessage, #moreSurprise {
       display: none;
       font-size: 20px;
       color: #ff69b4;
@@ -34,11 +51,8 @@
     }
 
     #moreSurprise {
-      display: none;
-      font-size: 22px;
       font-weight: bold;
       color: #ff1493;
-      margin-top: 30px;
     }
 
     .surprise-button {
@@ -55,6 +69,7 @@
     .surprise-button:hover {
       background-color: #ff1493;
     }
+
   </style>
 </head>
 <body>
